@@ -2,7 +2,7 @@
 
 Click the button below to deploy a Windows 10 virtual machine with secure Bastion access.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/jwallaceni/Deploy-Lab/main/azuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/[https://raw.githubusercontent.com/jwallaceni/Deploy-Lab/main/azuredeploy.json](https://raw.githubusercontent.com/jwallaceni/Deploy-Lab/refs/heads/main/azuredeploy.json))
 
 ## Deployment Parameters
 

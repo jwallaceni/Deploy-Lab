@@ -1,4 +1,17 @@
-# Deploy Active Directory Lab
-Deploy the lab environment to your Azure account.
+# Windows 10 VM with Azure Bastion
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/[https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-storage-account-create%2Fazuredeploy.json](https://raw.githubusercontent.com/jwallaceni/Deploy-Lab/refs/heads/main/deploy-lab.json))
+Click the button below to deploy a Windows 10 virtual machine with secure Bastion access.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/jwallaceni/Deploy-Lab/azuredeploy.json)
+
+## Deployment Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| adminUsername | Username for the Windows 10 VM |
+| adminPassword | Password for the Windows 10 VM |
+| location | Azure region for deployment |
+
+## Post-Deployment
+
+Once deployed, connect to your VM using Azure Bastion from the Azure portal.

@@ -1,0 +1,13 @@
+{
+  "type": "Microsoft.Network/virtualNetworks",
+  "apiVersion": "2023-02-01",
+  "name": "[variables('virtualNetworkName')]",
+  "location": "[parameters('location')]",
+  "properties": {
+    "addressSpace": { "addressPrefixes": [ "[parameters('vnet-ip-prefix')]" ] },
+    "subnets": [
+      { "name": "subnet-1", "properties": { "addressPrefix": "[parameters('subnet-ip-prefix')]" } },
+      { "name": "AzureBastionSubnet", "properties": { "addressPrefix": "[parameters('bastion-subnet-ip-prefix')]" } }
+    ]
+  }
+}

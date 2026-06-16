@@ -11,3 +11,26 @@
     ]
   }
 }
+{
+  "type": "Microsoft.Network/networkSecurityGroups",
+  "apiVersion": "2023-02-01",
+  "name": "[variables('nsgName')]",
+  "location": "[parameters('location')]",
+  "properties": {
+    "securityRules": [
+      {
+        "name": "AllowRDPFromBastion",
+        "properties": {
+          "protocol": "Tcp",
+          "sourcePortRange": "*",
+          "destinationPortRange": "3389",
+          "sourceAddressPrefix": "[parameters('bastion-subnet-ip-prefix')]",
+          "destinationAddressPrefix": "*",
+          "access": "Allow",
+          "priority": 100,
+          "direction": "Inbound"
+        }
+      }
+    ]
+  }
+}
